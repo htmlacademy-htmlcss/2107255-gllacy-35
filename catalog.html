@@ -1,15 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Каталог | Глейси | HTML Academy</title>
-	<link rel="stylesheet" href="./styles/styles.min.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Сливочное мороженое | Каталог | Глейси | HTML Academy</title>
+		<link rel="stylesheet" href="./styles/styles.min.css">
+	</head>
 
-<body>
+	<body class="page-theme-pink">
+		<header class="page-header">
+			<div class="container">
+				<div class="header-wrapper">
+					<nav class="main-navigation">
+						<a class="logo" href="./index.html">
+							<span class="visually-hidden">Главная</span>
+							<img class="logo-image" src="./images/logo.svg" width="137" height="56" alt="Логотип магазина мороженого «Глейси».">
+						</a>
 
-</body>
+						<ul class="site-navigation text-paragraph reset-list">
+							<li class="site-navigation-item site-navigation-dropdown">
+								<button class="site-navigation-link site-navigation-dropdown-toggle normalize-button" type="button">
+									Каталог
+								</button>
+							</li>
+							<li class="site-navigation-item">
+								<a class="site-navigation-link normalize-link" href="javascript:void(0)">
+									Доставка и оплата
+								</a>
+							</li>
+							<li class="site-navigation-item">
+								<a class="site-navigation-link normalize-link" href="javascript:void(0)">
+									О компании
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="user-menu">
+						<address class="user-menu-item header-address text-paragraph">
+							<a class="header-phone normalize-link" href="tel:+78005558628">+7 800 555-86-28</a>
+						</address>
+
+						<div class="user-menu-item user-menu-dropdown">
+							<button class="user-menu-button search-button" type="button">
+								<span class="visually-hidden">Поиск</span>
+							</button>
+						</div>
+						<div class="user-menu-item user-menu-dropdown">
+							<button class="user-menu-button button-icon-text login-button text-small" type="button">
+								Вход
+							</button>
+						</div>
+						<div class="user-menu-item user-menu-dropdown">
+							<button class="user-menu-button button-icon-text cart-button text-small" type="button">
+								<span class="visually-hidden">Корзина</span>
+								<span class="cart-counter">2 товара</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main-inner main-container">
+			<header class="inner-header">
+				<div class="container">
+					<div class="inner-header-wrapper">
+						<ul class="breadcrumbs text-small reset-list">
+							<li class="breadcrumbs-item">
+								<a class="breadcrumbs-link normalize-link" href="./index.html">
+									Главная
+								</a>
+							</li>
+							<li class="breadcrumbs-item">
+								<a class="breadcrumbs-link normalize-link" href="javascript:void(0)">
+									Каталог
+								</a>
+							</li>
+							<li class="breadcrumbs-item">
+								<a class="breadcrumbs-link normalize-link" href="./catalog.html" aria-current="page">
+									Сливочное мороженое
+								</a>
+							</li>
+						</ul>
+
+						<h1 class="inner-title main-subtitle">Сливочное мороженое</h1>
+					</div>
+				</div>
+			</header>
+		</main>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="footer-wrapper">
+					<ul class="footer-social social-list reset-list">
+						<li class="social-item">
+							<a class="social-link social-telegram" href="https://t.me/htmlacademy" target="_blank">
+								<span class="visually-hidden">Мы в Telegram</span>
+							</a>
+						</li>
+						<li class="social-item">
+							<a class="social-link social-vk" href="https://vk.com/htmlacademy" target="_blank">
+								<span class="visually-hidden">Мы в VK</span>
+							</a>
+						</li>
+						<li class="social-item">
+							<a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+								<span class="visually-hidden">Мы на Youtube</span>
+							</a>
+						</li>
+					</ul>
+
+					<section class="footer-navigation text-small">
+						<h2 class="footer-navigation-title">Для поставщиков</h2>
+
+						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">Наши документы</a>
+						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">О производстве</a>
+						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">Экологические стандарты</a>
+					</section>
+
+					<div class="footer-copyright">
+						<a class="web-developer-logo" href="https://htmlacademy.ru/" target="_blank">
+							<img class="web-developer-logo-image" src="./images/web-developer-logo.svg" width="93" height="27" alt="Логотип веб-разработчика «.html academy».">
+							<span class="visually-hidden">Сайт веб-разработчика «HTML Академии»</span>
+						</a>
+						<p class="footer-copyright-text text-smaller">
+							Сделано в
+							<a class="footer-copyright-link normalize-link" href="https://htmlacademy.ru/" target="_blank">.html academy</a>
+							&copy; 2021
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 
 </html>
