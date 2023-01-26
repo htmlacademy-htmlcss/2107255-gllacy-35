@@ -221,11 +221,6 @@ body {
 	outline: 4px solid rgb(252 252 252 / 0.4);
 }
 
-.additional-button {
-	background-color: rgb(252 252 252 / 0.3);
-	border: 2px solid #fcfcfc;
-}
-
 .button-bright {
 	color: #fcfcfc;
 	background-color: #ff2f64;
@@ -242,6 +237,26 @@ body {
 .field::placeholder {
 	color: #b9b9b9;
 	opacity: 1;
+}
+
+/* === Product Cards === */
+
+.product-image {
+	border-radius: 50%;
+	filter: drop-shadow(0 4px 12px rgb(45 52 64 / 0.1));
+}
+
+.product-title {
+	text-align: center;
+}
+
+.product-description {
+	text-align: center;
+}
+
+.product-cart-button {
+	background-color: #ff2f64;
+	border-radius: 26px;
 }
 
 /* ===== Main Index ===== */
@@ -297,26 +312,6 @@ body {
 
 .popular-products-title {
 	text-align: center;
-}
-
-/* Product Card */
-
-.product-image {
-	border-radius: 50%;
-	filter: drop-shadow(0 4px 12px rgb(45 52 64 / 0.1));
-}
-
-.product-title {
-	text-align: center;
-}
-
-.product-description {
-	text-align: center;
-}
-
-.product-button {
-	background-color: #ff2f64;
-	border-radius: 50%;
 }
 
 /* === Shop Advantages === */
@@ -394,4 +389,42 @@ body {
 
 .breadcrumbs-link {
 	font-weight: 700;
+}
+
+/* === Catalog Filter === */
+
+.filter-group {
+	padding: 0;
+	border: 0;
+}
+
+.filter-group-title {
+	padding: 0;
+}
+
+.filter-sorting-select {
+	font: inherit;
+	color: inherit;
+	background-color: rgb(252 252 252 / 0.3);
+	border: 0;
+}
+
+.filter-range-slider {
+	background-color: rgb(252 252 252 / 0.3);
+}
+
+.filter-controls-list {
+	background-color: rgb(252 252 252 / 0.3);
+}
+
+.filter-button {
+	font-weight: 700;
+	background-color: rgb(252 252 252 / 0.3);
+	outline: 2px solid #fcfcfc;
+}
+
+/* === Catalog Pagination === */
+
+.pagination-link[aria-current="page"] {
+	background-color: #fcfcfc;
 }
