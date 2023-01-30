@@ -8,14 +8,16 @@
 		<link rel="stylesheet" href="./styles/styles.min.css">
 	</head>
 
+	<!-- Для Темы 1 - класс "page-theme-pink", для Темы 2 - "page-theme-blue", для Темы 3 - "page-theme-yellow" -->
+
 	<body class="page-theme-pink">
 		<header class="page-header">
 			<div class="container">
 				<div class="header-wrapper">
 					<nav class="main-navigation">
 						<a class="logo" href="./index.html" aria-current="page">
-							<span class="visually-hidden">Главная</span>
 							<img class="logo-image" src="./images/logo.svg" width="137" height="56" alt="Логотип магазина мороженого «Глейси».">
+							<span class="visually-hidden">Главная</span>
 						</a>
 
 						<ul class="site-navigation text-paragraph reset-list">
@@ -38,8 +40,8 @@
 					</nav>
 
 					<div class="user-menu">
-						<address class="user-menu-item header-address text-paragraph">
-							<a class="header-phone normalize-link" href="tel:+78005558628">+7 800 555-86-28</a>
+						<address class="user-menu-item header-address">
+							<a class="header-phone text-paragraph normalize-link" href="tel:+78005558628">+7 800 555-86-28</a>
 						</address>
 
 						<div class="user-menu-item user-menu-dropdown">
@@ -48,12 +50,12 @@
 							</button>
 						</div>
 						<div class="user-menu-item user-menu-dropdown">
-							<button class="user-menu-button button-icon-text login-button text-small" type="button">
+							<button class="user-menu-button login-button text-small" type="button">
 								Вход
 							</button>
 						</div>
 						<div class="user-menu-item user-menu-dropdown">
-							<button class="user-menu-button button-icon-text cart-button text-small" type="button">
+							<button class="user-menu-button cart-button text-small" type="button">
 								<span class="visually-hidden">Корзина</span>
 								<span class="cart-counter">2 товара</span>
 							</button>
@@ -66,52 +68,76 @@
 		<main class="main-index main-container">
 			<h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
 
-			<section class="promo-slider">
+			<section class="promo-slider index-section">
 				<div class="container">
-					<div class="slider-wrapper">
+					<div class="promo-slider-wrapper">
 						<ul class="slider-cards reset-list">
-							<li class="slider-card">
-								<div class="slider-info">
+
+							<!-- Для показа слайдов - карточкам слайдера добавляется класс "slider-card-active", показанному слайду добавляется класс "slider-card-last" -->
+
+							<li class="slider-card slider-card-active">
+								<div class="slider-content">
 									<h2 class="slider-title main-title">Нежный пломбир с&nbsp;клубничным джемом</h2>
 									<p class="slider-description text-paragraph-big">
 										Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом&nbsp;– это идеальный десерт для всей семьи.
 									</p>
-									<a class="slider-order-button button main-button" href="javascript:void(0)">Заказать</a>
+									<a class="slider-content-button button main-button" href="javascript:void(0)">Заказать</a>
 								</div>
 
-								<div class="slider-slideshow-wrapper">
-									<div class="slider-slideshow">
-										<img class="slider-image" src="./images/slider-strawberry.png" width="306" height="507" alt="Клубничное мороженое с белой шапкой, политое джемом, в вафельном рожке.">
+								<div class="slider-image-wrapper">
+									<img class="slider-image" src="./images/slider-strawberry.png" width="306" height="507" alt="Клубничное мороженое с шапкой из белой глазури, политое красным сиропом, в вафельном рожке.">
+								</div>
+							</li>
 
-										<div class="slider-controls">
-											<button class="slider-button slider-button-prev additional-button" type="button">
-												<span class="visually-hidden">К предыдущему слайду</span>
-											</button>
-											<button class="slider-button slider-button-next additional-button" type="button">
-												<span class="visually-hidden">К следующему слайду</span>
-											</button>
-										</div>
-									</div>
+							<li class="slider-card">
+								<div class="slider-content">
+									<h2 class="slider-title main-title">Сливочное мороженое со&nbsp;вкусом банана</h2>
+									<p class="slider-description text-paragraph-big">
+										Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
+									</p>
+									<a class="slider-content-button button main-button" href="javascript:void(0)">Заказать</a>
+								</div>
 
-									<div class="slider-slideshow-next">
-										<img class="slider-image-next" src="./images/slider-banana-preview.png" width="66" height="150" alt="Следующий слайд. Башня из трех шариков бананового мороженого в вафельном рожке.">
-									</div>
-									<div class="slider-slideshow-next">
-										<img class="slider-image-next" src="./images/slider-caramel-preview.png" width="66" height="150" alt="Предыдущий слайд. Карамельное мороженое с кусочками зефира, украшенное листиками мяты, в сахарной трубочке.">
-									</div>
+								<div class="slider-image-wrapper">
+									<img class="slider-image" src="./images/slider-banana.png" width="306" height="507" alt="Рожок с башней из трех шариков бананового мороженого.">
+								</div>
+							</li>
+
+							<li class="slider-card slider-card-last">
+								<div class="slider-content">
+									<h2 class="slider-title main-title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
+									<p class="slider-description text-paragraph-big">
+										Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
+									</p>
+									<a class="slider-content-button button main-button" href="javascript:void(0)">Заказать</a>
+								</div>
+
+								<div class="slider-image-wrapper">
+									<img class="slider-image" src="./images/slider-caramel.png" width="306" height="507" alt="Карамельное мороженое с маршмеллоу, украшенное листиками мяты, в вафельном рожке.">
 								</div>
 							</li>
 						</ul>
 
+						<div class="slider-controls">
+							<button class="slider-button slider-button-prev normalize-button" type="button">
+								<span class="visually-hidden">Предыдущий слайд</span>
+							</button>
+							<button class="slider-button slider-button-next normalize-button" type="button">
+								<span class="visually-hidden">Следующий слайд</span>
+							</button>
+						</div>
+
+						<!-- Для выделения текущего слайда - кнопке добавить класс "is-current" -->
+
 						<div class="slider-pagination">
 							<button class="slider-pagination-button is-current normalize-button" type="button">
-								<span class="visually-hidden">Слайд 1</span>
+								<span class="visually-hidden">1 слайд</span>
 							</button>
 							<button class="slider-pagination-button normalize-button" type="button">
-								<span class="visually-hidden">Слайд 2</span>
+								<span class="visually-hidden">2 слайд</span>
 							</button>
 							<button class="slider-pagination-button normalize-button" type="button">
-								<span class="visually-hidden">Слайд 3</span>
+								<span class="visually-hidden">3 слайд</span>
 							</button>
 						</div>
 
@@ -136,7 +162,7 @@
 				</div>
 			</section>
 
-			<section class="banners">
+			<section class="banners index-section">
 				<div class="container">
 					<div class="banners-wrapper">
 						<h2 class="banners-title main-subtitle">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
@@ -162,7 +188,7 @@
 				</div>
 			</section>
 
-			<section class="popular-products">
+			<section class="popular-products index-section">
 				<div class="container">
 					<div class="popular-products-wrapper">
 						<h2 class="popular-products-title main-subtitle">Попробуйте самые популярные вкусы нашего мороженого</h2>
@@ -248,7 +274,7 @@
 				</div>
 			</section>
 
-			<section class="shop-advantages">
+			<section class="shop-advantages index-section">
 				<div class="container">
 					<div class="shop-advantages-wrapper">
 						<div class="shop-advantages-content">
@@ -283,39 +309,41 @@
 				</div>
 			</section>
 
-			<div class="index-two-columns">
+			<div class="news-container index-section">
 				<div class="container">
-					<section class="news-blog">
-						<h2 class="news-blog-title text-paragraph">Новое в нашем блоге</h2>
+					<div class="index-two-columns">
+						<section class="news-blog">
+							<h2 class="news-blog-title text-paragraph">Новое в нашем блоге</h2>
 
-						<a class="news-blog-article-link normalize-link" href="javascript:void(0)">
-							<h3 class="news-blog-article-title subtitle">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
-						</a>
-					</section>
+							<a class="news-blog-article-link normalize-link" href="javascript:void(0)">
+								<h3 class="news-blog-article-title subtitle">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
+							</a>
+						</section>
 
-					<section class="newsletter">
-						<div class="newsletter-content">
-							<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
-							<p class="newsletter-description">
-								Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не&nbsp;спамить и не слать всякой ненужной ерунды. Честно =)
-							</p>
+						<section class="newsletter">
+							<div class="newsletter-content">
+								<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
+								<p class="newsletter-description">
+									Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не&nbsp;спамить и не слать всякой ненужной ерунды. Честно =)
+								</p>
 
-							<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-								<label class="newsletter-label">
-									<span class="visually-hidden">Ваш e-mail</span>
-									<input class="newsletter-field field text-paragraph" type="email" name="newsletter-email" placeholder="email@example.com" required>
-								</label>
-								<button class="newsletter-button button button-bright" type="submit">Отправить</button>
-							</form>
-						</div>
-					</section>
+								<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+									<label class="newsletter-label">
+										<span class="visually-hidden">Ваш e-mail</span>
+										<input class="newsletter-field field text-paragraph" type="email" name="newsletter-email" placeholder="email@example.com" required>
+									</label>
+									<button class="newsletter-button button button-bright" type="submit">Отправить</button>
+								</form>
+							</div>
+						</section>
+					</div>
 				</div>
 			</div>
 
-			<section class="delivery">
+			<section class="delivery index-section">
 				<div class="container">
 					<div class="delivery-wrapper">
-						<div class="delivery-info">
+						<div class="delivery-content">
 							<h2 class="delivery-title main-subtitle">Доставка любимого мороженого на дом</h2>
 							<p class="delivery-description">
 								Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
