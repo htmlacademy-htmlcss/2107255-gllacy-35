@@ -11,7 +11,7 @@
 	<body class="page-theme-pink">
 		<header class="page-header">
 			<div class="container">
-				<div class="header-wrapper">
+				<div class="page-header-wrapper">
 					<nav class="main-navigation">
 						<a class="logo" href="./index.html">
 							<img class="logo-image" src="./images/logo.svg" width="137" height="56" alt="Логотип магазина мороженого «Глейси».">
@@ -39,7 +39,7 @@
 
 					<div class="user-menu">
 						<address class="user-menu-item header-address">
-							<a class="header-phone text-paragraph normalize-link" href="tel:+78005558628">+7 800 555-86-28</a>
+							<a class="header-phone text-paragraph" href="tel:+78005558628">+7 800 555-86-28</a>
 						</address>
 
 						<div class="user-menu-item user-menu-dropdown">
@@ -93,7 +93,7 @@
 			<section class="catalog-filter">
 				<div class="container">
 					<div class="catalog-filter-wrapper">
-						<h2 class="visually-hidden">Сортировка и фильтрация товаров</h2>
+						<h2 class="visually-hidden">Сортировка и фильтрация продукции</h2>
 
 						<form class="filter-form text-small" action="https://echo.htmlacademy.ru/" method="get">
 							<fieldset class="filter-group">
@@ -140,21 +140,21 @@
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="to-10" checked>
+											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="to 10" checked>
 											<span class="filter-control-mark filter-radio-mark"></span>
 											<span class="filter-control-label">до 10%</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="to-30">
+											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="to 30">
 											<span class="filter-control-mark filter-radio-mark"></span>
 											<span class="filter-control-label">до 30%</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="from-30">
+											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="from 30">
 											<span class="filter-control-mark filter-radio-mark"></span>
 											<span class="filter-control-label">выше 30%</span>
 										</label>
@@ -182,7 +182,7 @@
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="fruit">
+											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="fruits">
 											<span class="filter-control-mark filter-checkbox-mark"></span>
 											<span class="filter-control-label">фрукты</span>
 										</label>
@@ -213,25 +213,22 @@
 			<section class="catalog-products">
 				<div class="container">
 					<div class="catalog-products-wrapper">
-						<h2 class="visually-hidden">Список товаров</h2>
+						<h2 class="visually-hidden">Продукция</h2>
 
 						<ul class="product-cards reset-list">
 							<li class="product-card">
 								<a class="product-image-link">
 									<img class="product-image" src="./images/products-raspberry.jpg" width="168" height="168" alt="Шарик малинового мороженого.">
 								</a>
-
-								<div class="product-content">
-									<a class="product-title-link normalize-link" href="javascript:void(0)">
-										<h3 class="product-title subtitle-small">Малинка</h3>
-									</a>
-									<p class="product-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
-									<div class="product-buy">
-										<b class="product-price subtitle-small">310 ₽/кг</b>
-										<button class="product-cart-button normalize-button" type="button">
-											<span class="visually-hidden">Добавить в корзину</span>
-										</button>
-									</div>
+								<a class="product-title-link normalize-link" href="javascript:void(0)">
+									<h3 class="product-title subtitle-small">Малинка</h3>
+								</a>
+								<p class="product-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
+								<div class="product-buy">
+									<b class="product-price subtitle-small">310 ₽/кг</b>
+									<button class="product-cart-button normalize-button" type="button">
+										<span class="visually-hidden">Добавить в корзину</span>
+									</button>
 								</div>
 							</li>
 
@@ -451,35 +448,37 @@
 			<section class="catalog-pagination">
 				<div class="container">
 					<div class="catalog-pagination-wrapper">
-						<h2 class="visually-hidden">Постраничная навигация по списку товаров</h2>
+						<h2 class="visually-hidden">Постраничная навигация по продукции</h2>
 
 						<button class="pagination-show-more button main-button" type="button">Показать еще</button>
 
-						<div class="pagination">
-							<a class="pagination-button pagination-prev">
-								<span class="visually-hidden">Предыдущая страница</span>
-							</a>
-							<ul class="pagination-list text-paragraph reset-list">
-								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)" aria-current="page">1</a>
-								</li>
-								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">2</a>
-								</li>
-								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">3</a>
-								</li>
-								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">4</a>
-								</li>
-								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">5</a>
-								</li>
-							</ul>
-							<a class="pagination-button pagination-next" href="javascript:void(0)">
-								<span class="visually-hidden">Следующая страница</span>
-							</a>
-						</div>
+						<ul class="pagination-list text-paragraph reset-list">
+							<li class="pagination-item">
+								<a class="pagination-button pagination-prev">
+									<span class="visually-hidden">Предыдущая страница</span>
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link normalize-link" href="javascript:void(0)" aria-current="page">1</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link normalize-link" href="javascript:void(0)">2</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link normalize-link" href="javascript:void(0)">3</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link normalize-link" href="javascript:void(0)">4</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link normalize-link" href="javascript:void(0)">5</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-button pagination-next" href="javascript:void(0)">
+									<span class="visually-hidden">Следующая страница</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -487,7 +486,7 @@
 
 		<footer class="page-footer">
 			<div class="container">
-				<div class="footer-wrapper">
+				<div class="page-footer-wrapper">
 					<ul class="footer-social social-list reset-list">
 						<li class="social-item">
 							<a class="social-link social-telegram" href="https://t.me/htmlacademy" target="_blank">

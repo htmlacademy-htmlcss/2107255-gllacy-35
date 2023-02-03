@@ -190,6 +190,8 @@ body {
 
 /* ===== Pages Components ===== */
 
+/* === Social === */
+
 .social-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -224,9 +226,101 @@ body {
 	background-image: url("../icons/stack.svg#social-youtube");
 }
 
+/* === Product Cards === */
+
+.product-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+
+.product-card {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0 40px 24px;
+}
+
+.product-card::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: calc(100% - 51px);
+	background-color: #fcfcfc;
+	border-radius: 8px;
+	content: "";
+}
+
+.product-image-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 190px;
+	height: 168px;
+	margin-bottom: 16px;
+	padding: 0 11px;
+}
+
+.product-image {
+	border-radius: 50%;
+	filter: drop-shadow(0 4px 12px rgb(45 52 64 / 0.1));
+}
+
+.product-title-link {
+	margin-bottom: 9px;
+}
+
+.product-title {
+	text-align: center;
+}
+
+.product-description {
+	margin: 0 0 7px;
+	text-align: center;
+}
+
+.product-description:last-of-type {
+	margin-bottom: 15px;
+}
+
+.product-buy {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: auto;
+}
+
+.product-price {
+	margin-right: 32px;
+}
+
+.product-cart-button {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	background-color: #ff2f64;
+	border-radius: 50%;
+}
+
+.product-cart-button::before {
+	width: 16px;
+	height: 16px;
+	mask-image: url("../icons/stack.svg#cart-icon");
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+	background-color: #fcfcfc;
+	content: "";
+}
+
 /* ===== Header ===== */
 
-.header-wrapper {
+.page-header-wrapper {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -281,6 +375,7 @@ body {
 	display: block;
 	padding: 6px 0;
 	font-weight: 700;
+	text-decoration: none;
 }
 
 .user-menu-button {
@@ -325,7 +420,7 @@ body {
 }
 
 .cart-button::before {
-	background-image: url("../icons/stack.svg#header-user-cart");
+	background-image: url("../icons/stack.svg#cart-icon");
 }
 
 /* ===== Footer ===== */
@@ -334,7 +429,7 @@ body {
 	margin-top: auto;
 }
 
-.footer-wrapper {
+.page-footer-wrapper {
 	display: grid;
 	grid-template-columns: 228px 1fr 228px;
 	column-gap: 128px;
@@ -413,7 +508,8 @@ body {
 }
 
 .main-button {
-	padding: 13px 22px 11px;
+	max-width: 280px;
+	padding: 12px 22px 12px;
 	color: #2d3440;
 	background-color: #fcfcfc;
 	border-radius: 26px;
@@ -438,26 +534,6 @@ body {
 	opacity: 1;
 }
 
-/* === Product Cards === */
-
-.product-image {
-	border-radius: 50%;
-	filter: drop-shadow(0 4px 12px rgb(45 52 64 / 0.1));
-}
-
-.product-title {
-	text-align: center;
-}
-
-.product-description {
-	text-align: center;
-}
-
-.product-cart-button {
-	background-color: #ff2f64;
-	border-radius: 26px;
-}
-
 /* ===== Main Index ===== */
 
 .index-section {
@@ -468,6 +544,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 30px;
+	align-items: start;
 }
 
 /* === Promo Slider === */
@@ -515,7 +592,6 @@ body {
 
 .slider-content-button {
 	min-width: 139px;
-	max-width: 280px;
 }
 
 .slider-image-wrapper {
@@ -661,32 +737,66 @@ body {
 
 /* === Banners === */
 
+.banners-wrapper {
+	padding-bottom: 1px;
+}
+
 .banners-title {
+	width: 435px;
+	margin: 0 auto 55px;
 	text-align: center;
 }
 
 .banner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 37px 215px 36px 36px;
 	background-color: #ff7799;
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: 219px;
+	border-radius: 16px;
 }
 
-.banner-raspberry {
+.banner::before {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 219px;
+	height: 100%;
+	max-height: 333px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+}
+
+.banner-raspberry::before {
 	background-image: url("../images/background/banner-raspberry.png");
 }
 
-.banner-marshmallow {
+.banner-marshmallow::before {
 	background-image: url("../images/background/banner-marshmallow.png");
 }
 
+.banner-title {
+	margin-bottom: 28px;
+}
+
 .banner-description {
+	margin: 0 0 27px;
 	color: #2d3440;
+}
+
+.banner-button {
+	min-width: 176px;
+	max-width: 300px;
+	margin-top: auto;
 }
 
 /* === Popular Products === */
 
 .popular-products-title {
+	width: 530px;
+	margin: 0 auto 56px;
 	text-align: center;
 }
 
