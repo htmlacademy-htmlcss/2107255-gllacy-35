@@ -69,19 +69,13 @@
 					<div class="inner-header-wrapper">
 						<ul class="breadcrumbs text-small reset-list">
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link normalize-link" href="./index.html">
-									Главная
-								</a>
+								<a class="breadcrumbs-link" href="./index.html">Главная</a>
 							</li>
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link normalize-link" href="javascript:void(0)">
-									Каталог
-								</a>
+								<a class="breadcrumbs-link" href="javascript:void(0)">Каталог</a>
 							</li>
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link normalize-link" href="./catalog.html" aria-current="page">
-									Сливочное мороженое
-								</a>
+								<span class="breadcrumbs-link is-current">Сливочное мороженое</span>
 							</li>
 						</ul>
 
@@ -96,7 +90,7 @@
 						<h2 class="visually-hidden">Сортировка и фильтрация продукции</h2>
 
 						<form class="filter-form text-small" action="https://echo.htmlacademy.ru/" method="get">
-							<fieldset class="filter-group">
+							<fieldset class="filter-group filter-sorting">
 								<legend class="filter-group-title">Сортировка:</legend>
 
 								<select class="filter-sorting-select" name="catalog-filter-sorting">
@@ -108,7 +102,7 @@
 								</select>
 							</fieldset>
 
-							<fieldset class="filter-group">
+							<fieldset class="filter-group filter-range">
 								<legend class="filter-group-title">
 									Цена: <span class="range-price-min">100</span> ₽ – <span class="range-price-max">500</span> ₽
 								</legend>
@@ -127,77 +121,77 @@
 								</div>
 							</fieldset>
 
-							<fieldset class="filter-group">
+							<fieldset class="filter-group filter-radio">
 								<legend class="filter-group-title">Жирность:</legend>
 
-								<ul class="filter-controls-list reset-list">
+								<ul class="filter-controls-list filter-radio-list reset-list">
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="0">
-											<span class="filter-control-mark filter-radio-mark"></span>
+											<input class="filter-control-input filter-control-radio visually-hidden" type="radio" name="fat-content" value="0">
+											<span class="filter-control-mark control-radio-mark"></span>
 											<span class="filter-control-label">0%</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="to 10" checked>
-											<span class="filter-control-mark filter-radio-mark"></span>
+											<input class="filter-control-input filter-control-radio visually-hidden" type="radio" name="fat-content" value="to 10" checked>
+											<span class="filter-control-mark control-radio-mark"></span>
 											<span class="filter-control-label">до 10%</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="to 30">
-											<span class="filter-control-mark filter-radio-mark"></span>
+											<input class="filter-control-input filter-control-radio visually-hidden" type="radio" name="fat-content" value="to 30">
+											<span class="filter-control-mark control-radio-mark"></span>
 											<span class="filter-control-label">до 30%</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-radio" type="radio" name="fat-content" value="from 30">
-											<span class="filter-control-mark filter-radio-mark"></span>
+											<input class="filter-control-input filter-control-radio visually-hidden" type="radio" name="fat-content" value="from 30">
+											<span class="filter-control-mark control-radio-mark"></span>
 											<span class="filter-control-label">выше 30%</span>
 										</label>
 									</li>
 								</ul>
 							</fieldset>
 
-							<fieldset class="filter-group">
+							<fieldset class="filter-group filter-checkbox">
 								<legend class="filter-group-title">Наполнители:</legend>
 
-								<ul class="filter-controls-list reset-list">
+								<ul class="filter-controls-list filter-checkbox-list reset-list">
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="chocolate" checked>
-											<span class="filter-control-mark filter-checkbox-mark"></span>
+											<input class="filter-control-input filter-control-checkbox visually-hidden" type="checkbox" name="fillers" value="chocolate" checked>
+											<span class="filter-control-mark control-checkbox-mark"></span>
 											<span class="filter-control-label">шоколадные</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="sugar-sprinkles" checked>
-											<span class="filter-control-mark filter-checkbox-mark"></span>
+											<input class="filter-control-input filter-control-checkbox visually-hidden" type="checkbox" name="fillers" value="sugar-sprinkles" checked>
+											<span class="filter-control-mark control-checkbox-mark"></span>
 											<span class="filter-control-label">сахарные посыпки</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="fruits">
-											<span class="filter-control-mark filter-checkbox-mark"></span>
+											<input class="filter-control-input filter-control-checkbox visually-hidden" type="checkbox" name="fillers" value="fruits">
+											<span class="filter-control-mark control-checkbox-mark"></span>
 											<span class="filter-control-label">фрукты</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="syrups">
-											<span class="filter-control-mark filter-checkbox-mark"></span>
+											<input class="filter-control-input filter-control-checkbox visually-hidden" type="checkbox" name="fillers" value="syrups">
+											<span class="filter-control-mark control-checkbox-mark"></span>
 											<span class="filter-control-label">сиропы</span>
 										</label>
 									</li>
 									<li class="filter-controls-item">
 										<label class="filter-control">
-											<input class="filter-control-input filter-checkbox" type="checkbox" name="fillers" value="jams">
-											<span class="filter-control-mark filter-checkbox-mark"></span>
+											<input class="filter-control-input filter-control-checkbox visually-hidden" type="checkbox" name="fillers" value="jams">
+											<span class="filter-control-mark control-checkbox-mark"></span>
 											<span class="filter-control-label">джемы</span>
 										</label>
 									</li>
