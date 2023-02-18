@@ -20,12 +20,32 @@
 							<span class="visually-hidden">Главная</span>
 						</a>
 
+						<!-- Для просмотра состояний кнопки "Каталог" в режиме "Активная" - добавить ей класс "is-active" -->
+
 						<ul class="site-navigation text-paragraph reset-list">
-							<li class="site-navigation-item site-navigation-dropdown">
-								<button class="site-navigation-link site-navigation-dropdown-toggle normalize-button" type="button">
+							<li class="site-navigation-item catalog-navigation-dropdown">
+								<button class="site-navigation-link catalog-navigation-toggle normalize-button" type="button">
 									Каталог
 								</button>
+								<ul class="catalog-navigation text-small reset-list">
+									<li class="catalog-navigation-item is-accented">
+										<a class="catalog-navigation-link is-accented" href="javascript:void(0)">Новинки</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="./catalog.html">Сливочное</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="javascript:void(0)">Щербеты</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="javascript:void(0)">Фруктовый лед</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="javascript:void(0)">Мелорин</a>
+									</li>
+								</ul>
 							</li>
+
 							<li class="site-navigation-item">
 								<a class="site-navigation-link normalize-link" href="javascript:void(0)">
 									Доставка и оплата
@@ -44,21 +64,105 @@
 							<a class="header-phone text-paragraph" href="tel:+78005558628">+7 800 555-86-28</a>
 						</address>
 
+						<!-- Для просмотра состояний кнопок в режиме "Активная" - добавить кнопке класс "is-active" -->
+
 						<div class="user-menu-item user-menu-dropdown">
 							<button class="user-menu-button search-button" type="button">
 								<span class="visually-hidden">Поиск</span>
 							</button>
+							<form class="user-menu-popover search-form" action="https://echo.htmlacademy.ru/" method="get">
+								<label class="search-form-label">
+									<span class="visually-hidden">Поиск по сайту</span>
+									<input class="search-form-field field text-paragraph" type="search" name="search" placeholder="Поиск по сайту" autocomplete="off" required>
+								</label>
+							</form>
 						</div>
+
 						<div class="user-menu-item user-menu-dropdown">
 							<button class="user-menu-button login-button text-small" type="button">
 								Вход
 							</button>
+							<section class="user-menu-popover auth-popover">
+								<h2 class="user-menu-popover-title subtitle">Личный кабинет</h2>
+
+								<form class="auth-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+									<label class="auth-form-label">
+										<span class="visually-hidden">Введите ваш e-mail</span>
+										<input class="auth-form-field field text-paragraph" type="email" name="auth-email" value="email@example.com" placeholder="email@example.com" required>
+									</label>
+									<label class="auth-form-label auth-form-password">
+										<span class="visually-hidden">Введите пароль</span>
+										<input class="auth-form-field field text-paragraph" type="password" name="auth-password" value="123456" required>
+									</label>
+									<div class="auth-form-user-actions">
+										<button class="auth-form-button button button-bright" type="submit">Войти</button>
+										<div class="auth-form-links text-small">
+											<a class="auth-form-link" href="javascript:void(0)">Забыли пароль?</a>
+											<a class="auth-form-link" href="javascript:void(0)">Регистрация</a>
+										</div>
+									</div>
+								</form>
+							</section>
 						</div>
+
 						<div class="user-menu-item user-menu-dropdown">
 							<button class="user-menu-button cart-button text-small" type="button">
 								<span class="visually-hidden">Корзина</span>
 								<span class="cart-counter">2 товара</span>
 							</button>
+
+							<!-- Для показа пустой корзины - добавить поповеру "user-menu-popover" класс "cart-empty" -->
+
+							<div class="user-menu-popover">
+								<section class="cart-popover">
+									<h2 class="user-menu-popover-title subtitle">Корзина</h2>
+
+									<ul class="cart-product-list reset-list">
+										<li class="cart-product-item">
+											<div class="cart-product-description">
+												<a class="cart-product-image-link" href="javascript:void(0)">
+													<img class="cart-product-image" src="./images/products-raspberry.jpg" width="46" height="46" alt="Шарик малинового мороженого.">
+													<span class="visually-hidden">Мороженое Малинка</span>
+												</a>
+												<a class="cart-product-title-link" href="javascript:void(0)">
+													<h3 class="cart-product-title subtitle-smaller">Малинка</h3>
+												</a>
+												<span class="cart-product-price-calculation text-small">1 кг х 310 ₽</span>
+											</div>
+											<b class="cart-product-price subtitle-smaller">310 ₽</b>
+											<button class="cart-product-remove normalize-button" type="button">
+												<span class="visually-hidden">Удалить из корзины</span>
+											</button>
+										</li>
+
+										<li class="cart-product-item">
+											<div class="cart-product-description">
+												<a class="cart-product-image-link" href="javascript:void(0)">
+													<img class="cart-product-image" src="./images/products-bubble-gum.jpg" width="46" height="46" alt="Шарик необычного голубого мороженого с разноцветной сахарной посыпкой.">
+													<span class="visually-hidden">Мороженое Бабл-гам</span>
+												</a>
+												<a class="cart-product-title-link" href="javascript:void(0)">
+													<h3 class="cart-product-title subtitle-smaller">Бабл-гам</h3>
+												</a>
+												<span class="cart-product-price-calculation text-small">1,5 кг х 320 ₽</span>
+											</div>
+											<b class="cart-product-price subtitle-smaller">480 ₽</b>
+											<button class="cart-product-remove normalize-button" type="button">
+												<span class="visually-hidden">Удалить из корзины</span>
+											</button>
+										</li>
+									</ul>
+
+									<div class="cart-ordering">
+										<a class="cart-order-button button button-bright" href="javascript:void(0)">Оформить заказ</a>
+										<p class="cart-order-info subtitle-smaller">Итого: <b class="cart-order-price">790 ₽</b></p>
+									</div>
+								</section>
+
+								<div class="cart-empty-popover">
+									<p class="cart-empty-popover-text subtitle">Ваша корзина пока пуста</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -133,7 +237,7 @@
 
 						<div class="slider-footer">
 							<div class="slider-pagination">
-								<button class="slider-pagination-button is-current normalize-button" type="button">
+								<button class="slider-pagination-button is-current normalize-button" type="button" disabled>
 									<span class="visually-hidden">1 слайд</span>
 								</button>
 								<button class="slider-pagination-button normalize-button" type="button">
