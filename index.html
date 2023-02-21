@@ -15,7 +15,7 @@
 			<div class="container">
 				<div class="page-header-wrapper">
 					<nav class="main-navigation">
-						<a class="logo" href="./index.html" aria-current="page">
+						<a class="logo interactive-element" href="./index.html" aria-current="page">
 							<img class="logo-image" src="./images/logo.svg" width="137" height="56" alt="Логотип магазина мороженого «Глейси».">
 							<span class="visually-hidden">Главная</span>
 						</a>
@@ -61,7 +61,7 @@
 
 					<div class="user-menu">
 						<address class="user-menu-item header-address">
-							<a class="header-phone text-paragraph" href="tel:+78005558628">+7 800 555-86-28</a>
+							<a class="header-phone text-paragraph interactive-element" href="tel:+78005558628">+7 800 555-86-28</a>
 						</address>
 
 						<!-- Для просмотра состояний кнопок в режиме "Активная" - добавить кнопке класс "is-active" -->
@@ -97,8 +97,8 @@
 									<div class="auth-form-user-actions">
 										<button class="auth-form-button button button-bright" type="submit">Войти</button>
 										<div class="auth-form-links text-small">
-											<a class="auth-form-link" href="javascript:void(0)">Забыли пароль?</a>
-											<a class="auth-form-link" href="javascript:void(0)">Регистрация</a>
+											<a class="auth-form-link interactive-element" href="javascript:void(0)">Забыли пароль?</a>
+											<a class="auth-form-link interactive-element" href="javascript:void(0)">Регистрация</a>
 										</div>
 									</div>
 								</form>
@@ -120,34 +120,34 @@
 									<ul class="cart-product-list reset-list">
 										<li class="cart-product-item">
 											<div class="cart-product-description">
-												<a class="cart-product-image-link" href="javascript:void(0)">
+												<a class="cart-product-image-link interactive-element" href="javascript:void(0)">
 													<img class="cart-product-image" src="./images/products-raspberry.jpg" width="46" height="46" alt="Шарик малинового мороженого.">
 													<span class="visually-hidden">Мороженое Малинка</span>
 												</a>
-												<a class="cart-product-title-link" href="javascript:void(0)">
+												<a class="cart-product-title-link interactive-element" href="javascript:void(0)">
 													<h3 class="cart-product-title subtitle-smaller">Малинка</h3>
 												</a>
 												<span class="cart-product-price-calculation text-small">1 кг х 310 ₽</span>
 											</div>
 											<b class="cart-product-price subtitle-smaller">310 ₽</b>
-											<button class="cart-product-remove normalize-button" type="button">
+											<button class="cart-product-remove normalize-button interactive-element" type="button">
 												<span class="visually-hidden">Удалить из корзины</span>
 											</button>
 										</li>
 
 										<li class="cart-product-item">
 											<div class="cart-product-description">
-												<a class="cart-product-image-link" href="javascript:void(0)">
+												<a class="cart-product-image-link interactive-element" href="javascript:void(0)">
 													<img class="cart-product-image" src="./images/products-bubble-gum.jpg" width="46" height="46" alt="Шарик необычного голубого мороженого с разноцветной сахарной посыпкой.">
 													<span class="visually-hidden">Мороженое Бабл-гам</span>
 												</a>
-												<a class="cart-product-title-link" href="javascript:void(0)">
+												<a class="cart-product-title-link interactive-element" href="javascript:void(0)">
 													<h3 class="cart-product-title subtitle-smaller">Бабл-гам</h3>
 												</a>
 												<span class="cart-product-price-calculation text-small">1,5 кг х 320 ₽</span>
 											</div>
 											<b class="cart-product-price subtitle-smaller">480 ₽</b>
-											<button class="cart-product-remove normalize-button" type="button">
+											<button class="cart-product-remove normalize-button interactive-element" type="button">
 												<span class="visually-hidden">Удалить из корзины</span>
 											</button>
 										</li>
@@ -174,7 +174,7 @@
 
 			<!-- Для Темы 1 - класс "page-theme-pink", для Темы 2 - "page-theme-blue", для Темы 3 - "page-theme-yellow" -->
 
-			<section class="promo-slider page-theme-pink index-section">
+			<section class="promo-slider index-section page-theme-pink">
 				<div class="container">
 					<div class="promo-slider-wrapper">
 						<ul class="slider-cards reset-list">
@@ -187,6 +187,10 @@
 									<p class="slider-description main-text-paragraph">
 										Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом&nbsp;– это&nbsp;идеальный десерт для всей семьи.
 									</p>
+
+									<!-- Для перехода кнопки в состояние "disabled" - добавить ссылке класс "is-disabled" -->
+									<!-- Для кнопки со спинером - добавить ссылке класс "button-spinner" -->
+
 									<a class="slider-content-button button main-button" href="javascript:void(0)">Заказать</a>
 								</div>
 
@@ -233,7 +237,7 @@
 							</button>
 						</div>
 
-						<!-- Для выделения текущего слайда - кнопке добавить класс "is-current" -->
+						<!-- Для выделения текущего слайда - добавить кнопке класс "is-current" и атрибут "disabled" -->
 
 						<div class="slider-footer">
 							<div class="slider-pagination">
@@ -308,11 +312,11 @@
 									<img class="product-image" src="./images/products-raspberry.jpg" width="168" height="168" alt="Шарик малинового мороженого.">
 									<span class="visually-hidden">Мороженое Малинка</span>
 								</a>
-								<a class="product-title-link" href="javascript:void(0)">
+								<a class="product-title-link interactive-element" href="javascript:void(0)">
 									<h3 class="product-title subtitle-small">Малинка</h3>
 								</a>
 								<p class="product-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
-								<div class="product-buy-wrapper">
+								<div class="product-buying-wrapper">
 									<b class="product-price subtitle-small">310 ₽/кг</b>
 									<button class="product-button normalize-button" type="button">
 										<span class="visually-hidden">Добавить в корзину</span>
@@ -325,11 +329,11 @@
 									<img class="product-image" src="./images/products-pistachio.jpg" width="168" height="168" alt="Шарик фисташкового мороженого.">
 									<span class="visually-hidden">Мороженое Фисташка</span>
 								</a>
-								<a class="product-title-link" href="javascript:void(0)">
+								<a class="product-title-link interactive-element" href="javascript:void(0)">
 									<h3 class="product-title subtitle-small">Фисташка</h3>
 								</a>
 								<p class="product-description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
-								<div class="product-buy-wrapper">
+								<div class="product-buying-wrapper">
 									<b class="product-price subtitle-small">340 ₽/кг</b>
 									<button class="product-button normalize-button" type="button">
 										<span class="visually-hidden">Добавить в корзину</span>
@@ -342,11 +346,11 @@
 									<img class="product-image" src="./images/products-blueberry.jpg" width="168" height="168" alt="Шарик мороженого крем-брюле с черничным наполнителем.">
 									<span class="visually-hidden">Мороженое Черника</span>
 								</a>
-								<a class="product-title-link" href="javascript:void(0)">
+								<a class="product-title-link interactive-element" href="javascript:void(0)">
 									<h3 class="product-title subtitle-small">Черника</h3>
 								</a>
 								<p class="product-description">Крем-брюле с&nbsp;черничным джемом</p>
-								<div class="product-buy-wrapper">
+								<div class="product-buying-wrapper">
 									<b class="product-price subtitle-small">330 ₽/кг</b>
 									<button class="product-button normalize-button" type="button">
 										<span class="visually-hidden">Добавить в корзину</span>
@@ -359,11 +363,11 @@
 									<img class="product-image" src="./images/products-bubble-gum.jpg" width="168" height="168" alt="Шарик необычного голубого мороженого с разноцветной сахарной посыпкой.">
 									<span class="visually-hidden">Мороженое Бабл-гам</span>
 								</a>
-								<a class="product-title-link" href="javascript:void(0)">
+								<a class="product-title-link interactive-element" href="javascript:void(0)">
 									<h3 class="product-title subtitle-small">Бабл-гам</h3>
 								</a>
 								<p class="product-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
-								<div class="product-buy-wrapper">
+								<div class="product-buying-wrapper">
 									<b class="product-price subtitle-small">320 ₽/кг</b>
 									<button class="product-button normalize-button" type="button">
 										<span class="visually-hidden">Добавить в корзину</span>
@@ -416,7 +420,7 @@
 						<section class="news-blog">
 							<h2 class="news-blog-title text-paragraph">Новое в нашем блоге</h2>
 
-							<a class="news-blog-article-link normalize-link" href="javascript:void(0)">
+							<a class="news-blog-article-link normalize-link interactive-element" href="javascript:void(0)">
 								<h3 class="news-blog-article-title subtitle">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
 							</a>
 						</section>
@@ -427,6 +431,8 @@
 								<p class="newsletter-description">
 									Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не&nbsp;спамить и не слать всякой ненужной ерунды. Честно =)
 								</p>
+
+								<!-- Для показа состояний поля с ошибкой - добавить ему класс "field-error" -->
 
 								<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
 									<label class="newsletter-label">
@@ -491,7 +497,7 @@
 
 								<p class="contacts-address-title">Для заказов по телефону:</p>
 								<p class="contacts-address-info contacts-address-phone">
-									<a class="contacts-phone subtitle-small" href="tel:+78128121212">+7 (812) 812-12-12</a>
+									<a class="contacts-phone subtitle-small interactive-element" href="tel:+78128121212">+7 (812) 812-12-12</a>
 									<span class="contacts-phone-time text-small">(с 10 до 20 ежедневно)</span>
 								</p>
 							</address>
@@ -527,19 +533,27 @@
 					<section class="footer-navigation text-small">
 						<h2 class="footer-navigation-title">Для&nbsp;поставщиков</h2>
 
-						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">Наши документы</a>
-						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">О производстве</a>
-						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">Экологические стандарты</a>
+						<a class="footer-navigation-link normalize-link interactive-element" href="javascript:void(0)">
+							Наши документы
+						</a>
+						<a class="footer-navigation-link normalize-link interactive-element" href="javascript:void(0)">
+							О производстве
+						</a>
+						<a class="footer-navigation-link normalize-link interactive-element" href="javascript:void(0)">
+							Экологические стандарты
+						</a>
 					</section>
 
 					<div class="footer-copyright">
-						<a class="web-developer-logo" href="https://htmlacademy.ru/" target="_blank">
+						<a class="web-developer-logo interactive-element" href="https://htmlacademy.ru/" target="_blank">
 							<img class="web-developer-logo-image" src="./images/web-developer-logo.svg" width="93" height="27" alt="Логотип веб-разработчика «.html academy».">
 							<span class="visually-hidden">Сайт веб-разработчика «HTML Академия»</span>
 						</a>
 						<p class="footer-copyright-text text-smaller">
 							Сделано в
-							<a class="footer-copyright-link normalize-link" href="https://htmlacademy.ru/" target="_blank">.html academy</a>
+							<a class="footer-copyright-link interactive-element" href="https://htmlacademy.ru/" target="_blank">
+								.html academy
+							</a>
 							&copy; 2021
 						</p>
 					</div>
