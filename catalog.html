@@ -25,6 +25,7 @@
 								<button class="site-navigation-link catalog-navigation-toggle normalize-button" type="button">
 									Каталог
 								</button>
+
 								<ul class="catalog-navigation text-small reset-list">
 									<li class="catalog-navigation-item is-accented">
 										<a class="catalog-navigation-link is-accented" href="javascript:void(0)">Новинки</a>
@@ -68,6 +69,7 @@
 							<button class="user-menu-button search-button" type="button">
 								<span class="visually-hidden">Поиск</span>
 							</button>
+
 							<form class="user-menu-popover search-form" action="https://echo.htmlacademy.ru/" method="get">
 								<label class="search-form-label">
 									<span class="visually-hidden">Поиск по сайту</span>
@@ -80,6 +82,7 @@
 							<button class="user-menu-button login-button text-small" type="button">
 								Вход
 							</button>
+
 							<section class="user-menu-popover auth-popover">
 								<h2 class="user-menu-popover-title subtitle">Личный кабинет</h2>
 
@@ -179,7 +182,7 @@
 								<a class="breadcrumbs-link" href="javascript:void(0)">Каталог</a>
 							</li>
 							<li class="breadcrumbs-item">
-								<span class="breadcrumbs-link is-current">Сливочное мороженое</span>
+								<span class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженое</span>
 							</li>
 						</ul>
 
@@ -527,32 +530,34 @@
 					<div class="catalog-pagination-wrapper">
 						<h2 class="visually-hidden">Постраничная навигация по продукции</h2>
 
+						<!-- Для кнопки со спинером - добавить ей класс "button-spinner" -->
+
 						<button class="pagination-show-more button main-button" type="button">Показать еще</button>
 
 						<div class="pagination-container">
-							<a class="pagination-button pagination-prev">
+							<a class="pagination-button pagination-prev interactive-element">
 								<span class="visually-hidden">Предыдущая страница</span>
 							</a>
 
 							<ul class="pagination-list text-paragraph reset-list">
 								<li class="pagination-item">
-									<span class="pagination-link is-current normalize-link">1</span>
+									<span class="pagination-link pagination-link-current">1</span>
 								</li>
 								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">2</a>
+									<a class="pagination-link" href="javascript:void(0)">2</a>
 								</li>
 								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">3</a>
+									<a class="pagination-link" href="javascript:void(0)">3</a>
 								</li>
 								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">4</a>
+									<a class="pagination-link" href="javascript:void(0)">4</a>
 								</li>
 								<li class="pagination-item">
-									<a class="pagination-link normalize-link" href="javascript:void(0)">5</a>
+									<a class="pagination-link" href="javascript:void(0)">5</a>
 								</li>
 							</ul>
 
-							<a class="pagination-button pagination-next" href="javascript:void(0)">
+							<a class="pagination-button pagination-next interactive-element" href="javascript:void(0)">
 								<span class="visually-hidden">Следующая страница</span>
 							</a>
 						</div>
@@ -585,19 +590,27 @@
 					<section class="footer-navigation text-small">
 						<h2 class="footer-navigation-title">Для&nbsp;поставщиков</h2>
 
-						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">Наши документы</a>
-						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">О производстве</a>
-						<a class="footer-navigation-link normalize-link" href="javascript:void(0)">Экологические стандарты</a>
+						<a class="footer-navigation-link normalize-link interactive-element" href="javascript:void(0)">
+							Наши документы
+						</a>
+						<a class="footer-navigation-link normalize-link interactive-element" href="javascript:void(0)">
+							О производстве
+						</a>
+						<a class="footer-navigation-link normalize-link interactive-element" href="javascript:void(0)">
+							Экологические стандарты
+						</a>
 					</section>
 
 					<div class="footer-copyright">
-						<a class="web-developer-logo" href="https://htmlacademy.ru/" target="_blank">
+						<a class="web-developer-logo interactive-element" href="https://htmlacademy.ru/" target="_blank">
 							<img class="web-developer-logo-image" src="./images/web-developer-logo.svg" width="93" height="27" alt="Логотип веб-разработчика «.html academy».">
 							<span class="visually-hidden">Сайт веб-разработчика «HTML Академия»</span>
 						</a>
 						<p class="footer-copyright-text text-smaller">
 							Сделано в
-							<a class="footer-copyright-link normalize-link" href="https://htmlacademy.ru/" target="_blank">.html academy</a>
+							<a class="footer-copyright-link interactive-element" href="https://htmlacademy.ru/" target="_blank">
+								.html academy
+							</a>
 							&copy; 2021
 						</p>
 					</div>
