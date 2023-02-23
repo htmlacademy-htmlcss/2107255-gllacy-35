@@ -1022,14 +1022,72 @@ body {
 	filter: drop-shadow(0 8px 16px rgb(45 52 64 / 0.12));
 }
 
-.search-form-label {
+.search-form-field {
+	position: relative;
+}
+
+.search-form-input {
+	width: 100%;
+	padding-right: 42px;
+	appearance: textfield;
+}
+
+.search-form-input::-webkit-search-decoration,
+.search-form-input::-webkit-search-cancel-button,
+.search-form-input::-webkit-search-results-button,
+.search-form-input::-webkit-search-results-decoration {
+	margin: 0;
+	appearance: none;
+}
+
+.search-form-cancel-button {
+	position: absolute;
+	top: 16px;
+	right: 13px;
+	display: none;
+	width: 16px;
+	height: 16px;
+	opacity: 0.4;
+	transition: opacity 100ms ease-out;
+}
+
+.search-form-cancel-button::before {
+	display: block;
+	height: 100%;
+	background-image: url("../icons/stack.svg#cross-icon");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+}
+
+.search-form-input:not(:placeholder-shown):hover + .search-form-cancel-button {
 	display: block;
 }
 
-.search-form-field {
-	width: 100%;
-	padding-right: 40px;
+.search-form-input:not(:placeholder-shown) + .search-form-cancel-button:hover {
+	display: block;
+	opacity: 0.7;
 }
+
+.search-form-input:not(:placeholder-shown) + .search-form-cancel-button:focus-visible {
+	outline-offset: 2px;
+	opacity: 0.7;
+}
+
+@supports not selector(:focus-visible) {
+	.search-form-input:not(:placeholder-shown) + .search-form-cancel-button:focus {
+		outline-offset: 2px;
+		opacity: 0.7;
+	}
+}
+
+.search-form-input:not(:placeholder-shown) + .search-form-cancel-button:active {
+	opacity: 0.5;
+}
+
+/* .search-form-field:focus-within .search-form-input:not(:placeholder-shown) + .search-form-cancel-button {
+	display: block;
+} */
 
 .auth-popover {
 	width: 420px;

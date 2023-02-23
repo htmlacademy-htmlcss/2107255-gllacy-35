@@ -73,10 +73,15 @@
 							</button>
 
 							<form class="user-menu-popover search-form" action="https://echo.htmlacademy.ru/" method="get">
-								<label class="search-form-label">
-									<span class="visually-hidden">Поиск по сайту</span>
-									<input class="search-form-field field text-paragraph" type="search" name="search" placeholder="Поиск по сайту" autocomplete="off" required>
-								</label>
+								<div class="search-form-field">
+									<label for="site-search">
+										<span class="visually-hidden">Поиск по сайту</span>
+									</label>
+									<input class="search-form-input field text-paragraph" type="search" name="site-search" id="site-search" placeholder="Поиск по сайту" autocomplete="off" required>
+									<button class="search-form-cancel-button normalize-button" type="button">
+										<span class="visually-hidden">Очистить строку поиска</span>
+									</button>
+								</div>
 							</form>
 						</div>
 
