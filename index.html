@@ -62,7 +62,9 @@
 
 					<div class="user-menu">
 						<address class="user-menu-item header-address">
-							<a class="header-phone text-paragraph interactive-element" href="tel:+78005558628">+7 800 555-86-28</a>
+							<a class="header-phone text-paragraph interactive-element" href="tel:+78005558628">
+								+7 800 555-86-28
+							</a>
 						</address>
 
 						<!-- Для просмотра состояний кнопок в режиме "Активная" - добавить кнопке класс "is-active" -->
@@ -162,8 +164,12 @@
 									</ul>
 
 									<div class="cart-ordering">
-										<a class="cart-order-button button button-bright" href="javascript:void(0)">Оформить заказ</a>
-										<p class="cart-order-info subtitle-smaller">Итого: <b class="cart-order-price">790 ₽</b></p>
+										<a class="cart-order-button button button-bright" href="javascript:void(0)">
+											Оформить заказ
+										</a>
+										<p class="cart-order-info subtitle-smaller">
+											Итого: <b class="cart-order-price">790 ₽</b>
+										</p>
 									</div>
 								</section>
 
@@ -428,7 +434,9 @@
 							<h2 class="news-blog-title text-paragraph">Новое в нашем блоге</h2>
 
 							<a class="news-blog-article-link normalize-link interactive-element" href="javascript:void(0)">
-								<h3 class="news-blog-article-title subtitle">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
+								<h3 class="news-blog-article-title subtitle">
+									10 способов сервировки фруктовых щербетов к&nbsp;столу
+								</h3>
 							</a>
 						</section>
 
@@ -504,12 +512,16 @@
 
 								<p class="contacts-address-title">Для заказов по телефону:</p>
 								<p class="contacts-address-info contacts-address-phone">
-									<a class="contacts-phone subtitle-small interactive-element" href="tel:+78128121212">+7 (812) 812-12-12</a>
+									<a class="contacts-phone subtitle-small interactive-element" href="tel:+78128121212">
+										+7 (812) 812-12-12
+									</a>
 									<span class="contacts-phone-time text-small">(с 10 до 20 ежедневно)</span>
 								</p>
 							</address>
 
-							<a class="contacts-feedback-button button button-bright" href="javascript:void(0)">Форма обратной связи</a>
+							<a class="contacts-feedback-button button button-bright" href="javascript:void(0)">
+								Форма обратной связи
+							</a>
 						</div>
 					</div>
 				</div>
@@ -567,6 +579,38 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Для открытия модального окна - удалить у него класс "modal-close" -->
+
+		<div class="modal-container modal-close">
+			<div class="modal modal-contacts-feedback">
+				<button class="modal-close-button normalize-button" type="button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+
+				<section class="modal-content">
+					<h2 class="modal-title subtitle">Мы обязательно ответим вам!</h2>
+
+					<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+						<div class="feedback-form-fields">
+							<label class="feedback-form-label">
+								<span class="visually-hidden">Ваше имя и фамилия</span>
+								<input class="feedback-form-field field text-paragraph" type="text" name="feedback-name" placeholder="Имя и фамилия" required>
+							</label>
+							<label class="feedback-form-label">
+								<span class="visually-hidden">Ваш e-mail</span>
+								<input class="feedback-form-field field text-paragraph" type="email" name="feedback-email" placeholder="email@example.com" required>
+							</label>
+							<label class="feedback-form-label">
+								<span class="visually-hidden">Ваше сообщение</span>
+								<textarea class="feedback-form-textarea feedback-form-field field text-paragraph" name="feedback-message" placeholder="В свободной форме" required></textarea>
+							</label>
+						</div>
+						<button class="feedback-form-button button button-bright" type="submit">Отправить</button>
+					</form>
+				</section>
+			</div>
+		</div>
 	</body>
 
 </html>

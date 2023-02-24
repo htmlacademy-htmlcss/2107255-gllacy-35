@@ -207,7 +207,6 @@ body {
 .button {
 	display: inline-flex;
 	justify-content: center;
-	max-width: 280px;
 	padding: 12px 32px;
 	font-family: inherit;
 	font-weight: 700;
@@ -2378,4 +2377,100 @@ body {
 .pagination-link:active {
 	background-color: rgb(252 252 252 / 0.5);
 	box-shadow: inset 0 0 0 1px #fcfcfc;
+}
+
+/* ===== Modal ===== */
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(45 52 64 / 0.3);
+}
+
+.modal-close {
+	display: none;
+}
+
+.modal {
+	position: relative;
+	background-color: #fcfcfc;
+	border-radius: 8px;
+	box-shadow: 0 15px 40px rgb(45 52 64 / 0.12);
+}
+
+.modal-contacts-feedback {
+	width: 570px;
+	padding: 64px;
+}
+
+.modal-close-button {
+	position: absolute;
+	top: 27px;
+	right: 27px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+}
+
+.modal-close-button::before {
+	width: 20px;
+	height: 20px;
+	background-image: url("../icons/stack.svg#cross-icon");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+}
+
+.modal-close-button::after {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	content: "";
+}
+
+.modal-close-button:hover::before {
+	opacity: 0.7;
+}
+
+.modal-close-button:active::before {
+	opacity: 0.5;
+}
+
+.modal-title {
+	margin-bottom: 32px;
+	padding-right: 30px;
+}
+
+/* === Modal Form === */
+
+.feedback-form-fields {
+	display: grid;
+	row-gap: 16px;
+	margin-bottom: 32px;
+}
+
+.feedback-form-field {
+	width: 100%;
+}
+
+.feedback-form-textarea {
+	display: block;
+	min-height: 149px;
+	resize: none;
+}
+
+.feedback-form-button {
+	display: block;
+	min-width: 152px;
+	max-width: 262px;
+	margin: 0 -2px 2px auto;
 }
