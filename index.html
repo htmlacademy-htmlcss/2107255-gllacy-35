@@ -479,15 +479,43 @@
 
 							<div class="delivery-form-fields">
 								<div class="delivery-form-field">
-									<label class="delivery-label text-paragraph" for="delivery-date">Дата</label>
+									<div class="delivery-label-tooltip">
+										<label class="delivery-label delivery-label-date text-paragraph" for="delivery-date">
+											Дата
+										</label>
+										<div class="delivery-tooltip">
+											<button class="delivery-tooltip-toggle normalize-button" type="button" aria-labelledby="delivery-tooltip-text-date">
+											</button>
+											<span class="delivery-tooltip-text delivery-tooltip-text-date text-smaller" role="tooltip" id="delivery-tooltip-text-date">
+												Введите желаемую дату доставки
+											</span>
+										</div>
+									</div>
+
 									<input class="delivery-input field text-paragraph" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
 								</div>
+
 								<div class="delivery-form-field">
-									<label class="delivery-label text-paragraph" for="delivery-phone">Телефон</label>
+									<label class="delivery-label text-paragraph" for="delivery-phone">
+										Телефон
+									</label>
 									<input class="delivery-input field text-paragraph" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
 								</div>
+
 								<div class="delivery-form-field delivery-form-address">
-									<label class="delivery-label text-paragraph" for="delivery-address">Адрес</label>
+									<div class="delivery-label-tooltip">
+										<label class="delivery-label delivery-label-address text-paragraph" for="delivery-address">
+											Адрес
+										</label>
+										<div class="delivery-tooltip">
+											<button class="delivery-tooltip-toggle normalize-button" type="button" aria-labelledby="delivery-tooltip-text-address">
+											</button>
+											<span class="delivery-tooltip-text delivery-tooltip-text-address text-smaller" role="tooltip" id="delivery-tooltip-text-address">
+												Введите название улицы, дома и квартиры
+											</span>
+										</div>
+									</div>
+
 									<input class="delivery-input field text-paragraph" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
 								</div>
 							</div>
